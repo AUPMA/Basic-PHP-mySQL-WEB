@@ -1,0 +1,569 @@
+/*-----VARIABLES----*/
+
+html{
+    --mainbackgroundcolor: #2f95a0;
+    --subbackgroundcolor: #1a585c;
+    --mainlablecolor: #091f2d;
+    --fontcolor: #ffffff;
+}
+
+
+/*----------------------*/
+ 
+
+/*--- index.php ---*/
+
+.body_index,
+.body_login {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-color: #000000;
+}
+
+
+/*--- navbar.php ---*/
+.navbar{
+    background-color: var(--mainbackgroundcolor);
+    width: 100%;
+    max-height: 50px;
+    
+}
+.container{
+    display:grid;
+    /*grid-template-columns: 50fr 50fr 50fr 50fr 100fr 100fr;*/
+    grid-template-columns: 13% 13% 13% 13% 28% 20%;
+    
+
+}
+.navlinks{
+    display: inline;
+   
+    
+    
+}
+.navlinks,.navlinks a {
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 130%;
+    margin-top: 4%
+    
+}
+.search_input input {
+    border-color: #ffffff;
+    background-color: var(--mainbackgroundcolor);
+    height: 20px;
+    margin: 10px 0px 10px 10px;
+    color: var(--fontcolor);
+    border-style: solid;
+}
+
+.search_input button {
+    border: none;
+    color: var(--fontcolor);
+    font-size: 20px;
+    height: 25px;
+    margin: 1%;
+    background-color: var(--mainbackgroundcolor);
+    
+}
+.navbar_btns {
+    float: right;
+    margin: 1%;
+}
+
+.navbar_btns a {
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.fa-search:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*---NAVBAR DONE-----Do Media qurries*/
+@media screen and (max-width:1100px) {
+    .navlinks,.navlinks a {
+        font-size: 120%;
+        
+    }
+    .search_input input {
+        width: 40%;
+    }
+    .search_input button {
+        width: 40%;
+        
+    }
+    .navbar_btns a {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .navlinks,.navlinks a {
+        font-size: 110%;
+        
+    }
+    .search_input input {
+        width: 30%;
+    }
+    .search_input button {
+        width: 30%;
+        font-size: 100%;        
+    }
+    .navbar_btns a {
+        font-size: 100%;
+    }
+    .container{
+        grid-template-columns: 12% 12% 12% 12% 28% 24%;
+        
+    
+    }
+}
+
+
+/*--- login.php and signup.php---------------*/
+
+.login_container {
+    background-color: var(--mainbackgroundcolor);
+    width: 40%;
+    min-width: 200px;
+    min-height: 500px;
+    margin: 5% 30% 0% 30%;
+}
+
+.login_container p {
+    color: var(--fontcolor);
+    font-size: 30px;
+    background-color: var(--mainlablecolor);
+    padding: 20px 0px 20px 0px;
+    width: 80%;
+    margin: 5% 10% 1% 10%;
+    text-align: center;
+}
+
+.login_container h2 {
+    color: var(--fontcolor);
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.lonin_input {
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: var(--subbackgroundcolor);
+    color: var(--fontcolor);
+    font-size: 20px;
+    padding: 8px 0px 8px 0px;
+    width: 80%;
+    margin: 0% 10% 8% 10%;
+    text-align: center;
+}
+
+.login_btn {
+    width: 80%;
+    color: var(--fontcolor);
+    font-size: 50px;
+    background-color: var(--mainbackgroundcolor);
+    padding: 20px 0px 20px 0px;
+    margin: 5% 10% 0% 10%;
+    text-align: center;
+}
+
+.login_btn:hover,
+.reg_btn:hover {
+    background-color: var(--subbackgroundcolor);
+    color: var(--fontcolor);
+}
+
+.lonin_input:hover,
+.reg_input:hover {
+    background-color: var(--subbackgroundcolor);
+}
+
+.reg_input {
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: var(--subbackgroundcolor);
+    color: var(--fontcolor);
+    font-size: 20px;
+    padding: 8px 0px 8px 0px;
+    width: 80%;
+    margin: 0% 10% 2% 10%;
+    text-align: center;
+}
+
+.reg_btn {
+    width: 80%;
+    color: var(--fontcolor);
+    font-size: 50px;
+    background-color: var(--mainbackgroundcolor);
+    padding: 20px 0px 20px 0px;
+    margin: 5% 10% 0% 10%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*---Login and Register Done --*/
+
+
+/*--- postframe.php --- */
+
+
+/*--- Post Frame for all and top (Hopefully) ;;))--2018 01 10 20:55 */
+
+.post_frame_container {
+    width: 80%;
+    background-color: var(--mainbackgroundcolor);
+    min-width: 80%;
+    margin: 1% 10% 0% 10%;
+    padding: 10px 10px 10px 10px;
+}
+
+.sub_post_con {
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+}
+
+.post_title h3 a {
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.post_title {
+    background-color: var(--subbackgroundcolor);
+    padding: 1px;
+    margin: 2px;
+}
+
+.post_body {
+    background-color: var(--subbackgroundcolor);
+    padding: 1px;
+    margin: 2px;
+    color: #c5c0c0;
+}
+
+.pofooter i,
+.pofooter a {
+    color: var(--fontcolor);
+    text-decoration: none;
+}
+
+.pofooter {
+    display: inline-block;
+    margin: 0.5%;
+    padding: 1px 10px 1px 5px;
+}
+
+.comments {
+    padding: 2%;
+    background-color: var(--subbackgroundcolor);
+}
+
+#msg_input {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--mainbackgroundcolor);
+    color: var(--fontcolor);
+    font-size: 20px;
+    padding: 8px 0px 8px 0px;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+}
+
+.cus_btn {
+    margin-bottom: 5%;
+}
+
+
+/*---newpost.php---*/
+
+.newpost_container {
+    width: 70%;
+    margin: 5% 13% 10% 13%;
+    background-color: var(--mainbackgroundcolor);
+    padding: 25px;
+}
+
+.newpost_sub {
+    background-color: var(--subbackgroundcolor);
+    padding: 5px;
+}
+
+.newpost_sub p {
+    color: var(--fontcolor);
+    font-size: 30px;
+    padding: 0;
+    margin: 0% 0% 1% 1%;
+    width: 96%;
+    text-align: center;
+}
+
+.inside_np input {
+    margin: 0% 0% 1% 1%;
+    border-style: none;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    padding: 1% 0% 1% 0%;
+    width: 96%;
+}
+
+.inside_npx {
+    width: 96%;
+    margin: 0% 0% 1% 1%;
+    padding: 1% 0% 1% 0%;
+}
+
+.newpost_sub button {
+    width: 96%;
+    color: var(--fontcolor);
+    font-size: 15px;
+    background-color: var(--mainbackgroundcolor);
+    padding: 15px 0px 15px 0px;
+    margin: 0% 0% 1% 1%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newpost_sub button:hover {
+    background-color: var(--subbackgroundcolor);
+    cursor: pointer;
+}
+
+
+/*----AdminPanal-----*/
+
+.adminpanal {
+    background-color: var(--mainbackgroundcolor);
+    width: 80%;
+    margin: 1% 10% 1% 10%;
+    padding: 3% 0% 3% 0%;
+}
+
+.adminpanal_sub {
+    background-color: var(--mainbackgroundcolor);
+    width: 94%;
+    padding: 0;
+    margin: 0% 2.5% 0% 3%;
+}
+
+.adminpanal_sub h2 {
+    color: var(--fontcolor);
+    font-size: 30px;
+    background-color: var(--mainlablecolor);
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    margin: 0% 0% 1% 0%;
+    text-align: center;
+}
+
+.postrequest {
+    background-color: var(--subbackgroundcolor);
+    padding: 2% 0% 0% 0%;
+}
+
+.title_admin {
+    background-color: var(--mainbackgroundcolor);
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+    font-size: 25px;
+    color: var(--fontcolor);
+}
+
+
+/*---postrequestframe--*/
+
+.a_panal_post_title,
+.a_panal_post_content {
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+    background-color: #31d38d;
+    color: #000000;
+}
+
+.a_panal_post_title h3 {
+    padding: 0.5%;
+}
+
+.appof {
+    background-color: #31d38d;
+    display: inline-block;
+    margin: 0% 2% 0% 2%;
+}
+
+.btn {
+    margin: 1%;
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    border-style: solid;
+    float: right;
+}
+
+.action {
+    margin: 0% 2.5% 3% 0%;
+}
+
+.accept {
+    background-color: #2d7b33;
+}
+
+.discard {
+    background-color: rgb(138, 47, 47);
+}
+
+
+/*-----comment_frame.php-----*/
+
+.title_com {
+    background-color: var(--mainbackgroundcolor);
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    font-size: 25px;
+    color: var(--fontcolor);
+    padding:
+}
+
+.com {
+    color: var(--fontcolor);
+    padding: 0;
+    margin: 5px;
+}
+
+.comment_frame {
+    background-color: var(--mainbackgroundcolor);
+    margin: 2% 0% 2% 0%;
+}
+
+.cf_text textarea {
+    width: 99%;
+    background-color: var(--subbackgroundcolor);
+    border-style: solid;
+    border-color: #c5c0c0;
+    border-width: 2px;
+    color: #ffffff;
+}
+
+.cf_btn {
+    background-color: #d33131;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #c5c0c0;
+    width: 8%;
+    margin: 0.5% 0% 1% 92%;
+    color: var(--fontcolor);
+}
+
+.indexintro {
+    width: 100%;
+}
+
+.indexintro h2 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.indexintro p {
+    color: var(--fontcolor);
+    font-size: 20px;
+    text-align: center;
+}
+
+.indexbtns {
+    width: 100;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.indexbtns a {
+    background-color: var(--mainbackgroundcolor);
+    padding: 1%;
+    color: var(--fontcolor);
+    text-decoration: none;
+    margin: 1%;
+}
+
+.tandc {
+    width: 60%;
+    margin: 5% 20% 5% 20%;
+}
+
+.tandc p {
+    color: var(--fontcolor);
+    font-size: 20px;
+    padding: 2%;
+    text-align: justify;
+}
+
+.profile_details {
+    width: 94%;
+    min-height:380px;
+    margin: 1% 3% 2% 3%;
+    background-color: var(--subbackgroundcolor);
+    color: var(--fontcolor);
+}
+
+.profile_details label,.profile_details a {
+    color: var(--fontcolor);
+    font-size: 20px;
+    margin: 3%;
+}
+
+.profile_details img {
+    width: 20%;
+    
+    margin: 3% 3% 3% 3%;
+    
+}
+
+.profile_details_text {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    padding-top: 3%;
+    margin-left: 3%;
+}
+
+.worngpwun {
+    background-color: var(--mainbackgroundcolor);
+    margin: 10% 2% 2% 2%;
+    padding: 0.5%;
+}
+
+.worngpwun_sub {
+    background-color: var(--subbackgroundcolor);
+    margin: 0.5%;
+}
+
+.worngpwun_sub p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.worngpwun_sub button {
+    display: inline-block;
+    float: right;
+    background-color: var(--mainbackgroundcolor);
+    padding: 5px;
+    color: var(--fontcolor);
+}
+
